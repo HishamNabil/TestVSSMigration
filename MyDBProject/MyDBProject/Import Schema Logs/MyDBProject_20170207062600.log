@@ -1,0 +1,73 @@
+2/7/2017 8:26:00 PM	This log contains information about the import schema operation into project 'MyDBProject' on computer 'EGY-HNABIL-NB' by user 'HNabil'.
+2/7/2017 8:26:00 PM	Import of database schema has started.
+2/7/2017 8:26:05 PM	Gathering database options
+2/7/2017 8:26:05 PM	Gathering users
+2/7/2017 8:26:05 PM	Gathering roles
+2/7/2017 8:26:05 PM	Gathering application roles
+2/7/2017 8:26:05 PM	Gathering role memberships
+2/7/2017 8:26:05 PM	Gathering filegroups
+2/7/2017 8:26:05 PM	Gathering full-text catalogs
+2/7/2017 8:26:05 PM	Gathering assemblies
+2/7/2017 8:26:05 PM	Gathering certificates
+2/7/2017 8:26:05 PM	Gathering asymmetric keys
+2/7/2017 8:26:05 PM	Gathering symmetric keys
+2/7/2017 8:26:05 PM	Gathering encrypted symmetric keys
+2/7/2017 8:26:05 PM	Gathering schemas
+2/7/2017 8:26:05 PM	Gathering XML schema collections
+2/7/2017 8:26:05 PM	Gathering user-defined data types
+2/7/2017 8:26:05 PM	Gathering user-defined types
+2/7/2017 8:26:05 PM	Gathering table types
+2/7/2017 8:26:05 PM	Gathering unique keys for table types
+2/7/2017 8:26:05 PM	Gathering primary keys for table types
+2/7/2017 8:26:05 PM	Gathering check constraints for table types
+2/7/2017 8:26:05 PM	Gathering default constraints for table types
+2/7/2017 8:26:05 PM	Gathering partition functions
+2/7/2017 8:26:05 PM	Gathering partition schemes
+2/7/2017 8:26:05 PM	Gathering functions
+2/7/2017 8:26:05 PM	Gathering encrypted functions
+2/7/2017 8:26:05 PM	Gathering aggregates
+2/7/2017 8:26:05 PM	Gathering procedures
+2/7/2017 8:26:05 PM	Gathering encrypted procedures
+2/7/2017 8:26:05 PM	Gathering tables
+2/7/2017 8:26:06 PM	Gathering primary keys
+2/7/2017 8:26:06 PM	Gathering unique constraints
+2/7/2017 8:26:06 PM	Gathering foreign keys
+2/7/2017 8:26:06 PM	Gathering default constraints
+2/7/2017 8:26:06 PM	Gathering check constraints
+2/7/2017 8:26:06 PM	Gathering views
+2/7/2017 8:26:06 PM	Gathering encrypted views
+2/7/2017 8:26:06 PM	Gathering indexes
+2/7/2017 8:26:06 PM	Gathering statistics
+2/7/2017 8:26:06 PM	Gathering full-text index stoplists
+2/7/2017 8:26:06 PM	Gathering search property lists
+2/7/2017 8:26:06 PM	Gathering search properties
+2/7/2017 8:26:06 PM	Gathering full-text indexes
+2/7/2017 8:26:06 PM	Gathering column store indexes
+2/7/2017 8:26:06 PM	Gathering spatial indexes
+2/7/2017 8:26:06 PM	Gathering XML indexes
+2/7/2017 8:26:06 PM	Gathering Selective XML indexes
+2/7/2017 8:26:06 PM	Gathering encrypted triggers
+2/7/2017 8:26:06 PM	Gathering triggers
+2/7/2017 8:26:06 PM	Gathering encrypted and clr ddl triggers
+2/7/2017 8:26:06 PM	Gathering ddl triggers
+2/7/2017 8:26:06 PM	Gathering synonyms
+2/7/2017 8:26:06 PM	Gathering defaults
+2/7/2017 8:26:06 PM	Gathering data constraint uddt bindings
+2/7/2017 8:26:06 PM	Gathering rules
+2/7/2017 8:26:06 PM	Gathering data constraint uddt bindings
+2/7/2017 8:26:06 PM	Gathering message types
+2/7/2017 8:26:06 PM	Gathering queues
+2/7/2017 8:26:06 PM	Gathering contracts
+2/7/2017 8:26:06 PM	Gathering services
+2/7/2017 8:26:06 PM	Gathering event notifications
+2/7/2017 8:26:06 PM	Gathering remote service bindings
+2/7/2017 8:26:06 PM	Gathering broker priorities
+2/7/2017 8:26:06 PM	Gathering signatures
+2/7/2017 8:26:06 PM	Gathering data compression options
+2/7/2017 8:26:06 PM	Gathering sequence types
+2/7/2017 8:26:06 PM	Gathering extended properties
+2/7/2017 8:26:07 PM	Scanning project for duplicate elements
+2/7/2017 8:26:07 PM	Finished duplicate element processing
+2/7/2017 8:26:08 PM	Finished importing database.
+2/7/2017 8:26:08 PM	A summary of the import was saved to the following location: c:\users\hnabil\documents\visual studio 2015\Projects\MyDBProject\MyDBProject\Import Schema Logs\MyDBProject_20170207062600.log
+2/7/2017 8:26:08 PM	Click Finish to continue...
