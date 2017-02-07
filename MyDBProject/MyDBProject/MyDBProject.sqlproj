@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>MyDBProject</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{fd929070-af0e-4a80-9108-cb9e9359ac46}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>MyDBProject</RootNamespace>
+    <AssemblyName>MyDBProject</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables\" />
+    <Folder Include="Storage\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\sf_events_sf_permissions.sql" />
+    <Build Include="Tables\sf_taxonomies_sf_permissions.sql" />
+    <Build Include="Tables\sf_commnt.sql" />
+    <Build Include="Tables\sf_pg_tmpltes_sf_language_data.sql" />
+    <Build Include="Tables\sf_site_item_links.sql" />
+    <Build Include="Tables\dynmc_12f61819d914d0b97fd81817.sql" />
+    <Build Include="Tables\sf_events_sf_commnt.sql" />
+    <Build Include="Tables\sf_content_items_sf_commnt.sql" />
+    <Build Include="Tables\sf_chunks.sql" />
+    <Build Include="Tables\sf_pg_tmplts_pblshd_trnsltions.sql" />
+    <Build Include="Tables\sf_page_node_translation_siblings.sql" />
+    <Build Include="Tables\sf_events_category.sql" />
+    <Build Include="Tables\dynmc_bdf4d177b51349c48c877b10.sql" />
+    <Build Include="Tables\sf_content_link_attrbutes.sql" />
+    <Build Include="Tables\dynmc_f951bbf21114073bb4c9d8d9.sql" />
+    <Build Include="Tables\sf_txnms_spprtd_prmission_sets.sql" />
+    <Build Include="Tables\sf_approval_tracking_record.sql" />
+    <Build Include="Tables\sf_ec_product_attribute.sql" />
+    <Build Include="Tables\sf_commnt_sf_commnt.sql" />
+    <Build Include="Tables\sf_content_items.sql" />
+    <Build Include="Tables\sf_failed_deliveries.sql" />
+    <Build Include="Tables\sf_ec_product_attribute_value.sql" />
+    <Build Include="Tables\sf_page_node_references.sql" />
+    <Build Include="Tables\sf_commnt_parent_group_ids.sql" />
+    <Build Include="Tables\dynmc_2ff761dd57412b893f3fcb65.sql" />
+    <Build Include="Tables\sf_txnms_prmssnst_bjct_ttl_rs_.sql" />
+    <Build Include="Tables\sf_events.sql" />
+    <Build Include="Tables\sf_notif_cmplt_msg_job.sql" />
+    <Build Include="Tables\sf_ec_product_variation.sql" />
+    <Build Include="Tables\sf_wrkflw_dfntn_ddtnl_frst_lvl.sql" />
+    <Build Include="Tables\sf_blogs_sf_permissions.sql" />
+    <Build Include="Tables\dynmc_d06648bf468786c67007dc02.sql" />
+    <Build Include="Tables\sf_taxa_attrbutes.sql" />
+    <Build Include="Tables\sf_dynamic_type_base.sql" />
+    <Build Include="Tables\dynmc_78481792f466c893dff0100b.sql" />
+    <Build Include="Tables\sf_news_items_sf_language_data.sql" />
+    <Build Include="Tables\sf_notif_msg_job.sql" />
+    <Build Include="Tables\sf_ec_product_variation_detail.sql" />
+    <Build Include="Tables\sf_wrkflw_dfntn_ddtnl_scnd_lvl.sql" />
+    <Build Include="Tables\sf_blogs_sf_commnt.sql" />
+    <Build Include="Tables\dynmc_d4cfc9560d14dfb930588cc8.sql" />
+    <Build Include="Tables\sf_sitefinity_profile.sql" />
+    <Build Include="Tables\sf_draft_pages.sql" />
+    <Build Include="Tables\sf_nws_tms_pblshd_translations.sql" />
+    <Build Include="Tables\sf_notif_msg_job_log.sql" />
+    <Build Include="Tables\sf_ec_cart_address.sql" />
+    <Build Include="Tables\sf_blog_posts_tags.sql" />
+    <Build Include="Tables\sf_scrty_rts_spprtd_prmssn_sts.sql" />
+    <Build Include="Tables\sf_control_properties.sql" />
+    <Build Include="Tables\sf_notif_msg_template.sql" />
+    <Build Include="Tables\sf_ec_cart_detail.sql" />
+    <Build Include="Tables\sf_blog_posts_sf_permissions.sql" />
+    <Build Include="Tables\sf_form_description.sql" />
+    <Build Include="Tables\sf_notif_subscr_list.sql" />
+    <Build Include="Tables\dynmc_5f0552249dc14d0991df9845.sql" />
+    <Build Include="Tables\sf_ec_cart_discount.sql" />
+    <Build Include="Tables\sf_blg_psts_pblshd_trnslations.sql" />
+    <Build Include="Tables\sf_lbraries_thumbnail_profiles.sql" />
+    <Build Include="Tables\sf_blog_posts_sf_commnt.sql" />
+    <Build Include="Tables\sf_scrty_rts_prmssnst_bjct_ttl.sql" />
+    <Build Include="Tables\sf_libraries.sql" />
+    <Build Include="Tables\sf_notif_subscribers.sql" />
+    <Build Include="Tables\dynmc_dd7b49445df346ff8d7b3601.sql" />
+    <Build Include="Tables\sf_ec_cart_order.sql" />
+    <Build Include="Tables\sf_blog_posts_sf_language_data.sql" />
+    <Build Include="Tables\sf_blog_posts_category.sql" />
+    <Build Include="Tables\sf_scrity_roots_sf_permissions.sql" />
+    <Build Include="Tables\sf_form_entry.sql" />
+    <Build Include="Tables\sf_notif_subscriptions.sql" />
+    <Build Include="Tables\sf_ec_cart_payment.sql" />
+    <Build Include="Tables\sf_ntf_msg_jb_xcldd_rslvd_kys_.sql" />
+    <Build Include="Tables\sf_schema_vrsns_meta_types.sql" />
+    <Build Include="Tables\sf_list_items.sql" />
+    <Build Include="Tables\sf_ntf_msg_jb_cstm_mssg_haders.sql" />
+    <Build Include="Tables\dynmc_09bd99c199c42ccdd8023498.sql" />
+    <Build Include="Tables\sf_ec_coupon_code.sql" />
+    <Build Include="Tables\sf_lic_user_activity.sql" />
+    <Build Include="Tables\sf_counters.sql" />
+    <Build Include="Tables\sf_form_description_attrbutes.sql" />
+    <Build Include="Tables\sf_ntf_sbscrbrs_cstm_prperties.sql" />
+    <Build Include="Tables\dynmc_c253021dd09845dc63069d46.sql" />
+    <Build Include="Tables\sf_ec_customer.sql" />
+    <Build Include="Tables\sf_pg_templates_sf_permissions.sql" />
+    <Build Include="Tables\sf_lists.sql" />
+    <Build Include="Tables\sf_md_cntnt_pblshd_trnslations.sql" />
+    <Build Include="Tables\dynmc_d9b7f89166f45927b61c0459.sql" />
+    <Build Include="Tables\sf_ec_discount.sql" />
+    <Build Include="Tables\sf_manager_info.sql" />
+    <Build Include="Tables\sf_md_content_sf_language_data.sql" />
+    <Build Include="Tables\dynmc_f3596f5148843c367f51f007.sql" />
+    <Build Include="Tables\sf_ec_next_order_number.sql" />
+    <Build Include="Tables\sf_media_content.sql" />
+    <Build Include="Tables\sf_folders.sql" />
+    <Build Include="Tables\dynmc_f5546cf4bc45b78fd45cc92d.sql" />
+    <Build Include="Tables\sf_ec_order.sql" />
+    <Build Include="Tables\sf_pg_nd_prmssnst_bjct_ttl_rs_.sql" />
+    <Build Include="Tables\sf_meta_index.sql" />
+    <Build Include="Tables\dynmc_d65685970d314d0b11c1445f.sql" />
+    <Build Include="Tables\sf_ec_order_address.sql" />
+    <Build Include="Tables\sf_dashboard_log.sql" />
+    <Build Include="Tables\sf_page_node_sf_permissions.sql" />
+    <Build Include="Tables\sf_meta_fields.sql" />
+    <Build Include="Tables\sf_ec_customer_profile.sql" />
+    <Build Include="Tables\sf_ec_order_detail.sql" />
+    <Build Include="Tables\sf_dashboard_watchlist.sql" />
+    <Build Include="Tables\sf_page_node_attrbutes.sql" />
+    <Build Include="Tables\sf_meta_attribute.sql" />
+    <Build Include="Tables\sf_ec_order_discount.sql" />
+    <Build Include="Tables\sf_pblshng_pp_sttngs_ddtnl_dta.sql" />
+    <Build Include="Tables\sf_dynmc_cntent_sf_permissions.sql" />
+    <Build Include="Tables\dynmc_0d6863b07c54990d0d872d57.sql" />
+    <Build Include="Tables\sf_media_thumbnails.sql" />
+    <Build Include="Tables\sf_ec_order_payment.sql" />
+    <Build Include="Tables\sf_pblshng_pp_sttngs_lngge_ids.sql" />
+    <Build Include="Tables\sf_news_items.sql" />
+    <Build Include="Tables\sf_rdsgn_md_qry_lnk_sf_rdsgn_m.sql" />
+    <Build Include="Tables\dynmc_0cc06d99b53f480b6ff91f44.sql" />
+    <Build Include="Tables\sf_ec_payment_method.sql" />
+    <Build Include="Tables\sf_rbin_item.sql" />
+    <Build Include="Tables\sf_pblshng_pp_sttngs_cntnt_lnk.sql" />
+    <Build Include="Tables\sf_object_data.sql" />
+    <Build Include="Tables\sf_rdsgn_media_query.sql" />
+    <Build Include="Tables\sf_ec_tax.sql" />
+    <Build Include="Tables\sf_cntnt_tems_sf_language_data.sql" />
+    <Build Include="Tables\sf_cs_comments.sql" />
+    <Build Include="Tables\dynmc_29bcbd67160544bd04899041.sql" />
+    <Build Include="Tables\sf_pblshng_pnt_sttngs_stp_kywr.sql" />
+    <Build Include="Tables\sf_meta_types.sql" />
+    <Build Include="Tables\sf_rdsgn_media_query_link.sql" />
+    <Build Include="Tables\sf_ec_tax_class.sql" />
+    <Build Include="Tables\sf_cntnt_tms_pblshd_trnsltions.sql" />
+    <Build Include="Tables\sf_cs_groups.sql" />
+    <Build Include="Tables\dynmc_7cf4bbdf24d2586c95cd148b.sql" />
+    <Build Include="Tables\sf_pblshng_mppng_sttngs_sf_pbl.sql" />
+    <Build Include="Tables\sf_meta_type_descriptions.sql" />
+    <Build Include="Tables\sf_rdsgn_media_query_rule.sql" />
+    <Build Include="Tables\sf_ec_shippingmethod.sql" />
+    <Build Include="Tables\sf_cs_threads.sql" />
+    <Build Include="Tables\sf_pblshng_mppng_src_prprty_nm.sql" />
+    <Build Include="Tables\sf_page_data.sql" />
+    <Build Include="Tables\sf_contactus.sql" />
+    <Build Include="Tables\sf_site_sync_log_entry_sites.sql" />
+    <Build Include="Tables\dynmc_48d44568f184b909140187c1.sql" />
+    <Build Include="Tables\sf_pblshng_mppng_sf_pp_mppng_t.sql" />
+    <Build Include="Tables\sf_page_node.sql" />
+    <Build Include="Tables\sf_events_sf_language_data.sql" />
+    <Build Include="Tables\sf_site_sync_server.sql" />
+    <Build Include="Tables\sf_page_data_sf_commnt.sql" />
+    <Build Include="Tables\dynmc_6f8f1387c8d413932390b121.sql" />
+    <Build Include="Tables\sf_vnts_published_translations.sql" />
+    <Build Include="Tables\sf_site_sync_summary_sites.sql" />
+    <Build Include="Tables\sf_page_data_attrbutes.sql" />
+    <Build Include="Tables\sf_permissions_inheritance_map.sql" />
+    <Build Include="Tables\sf_cntent_items_sf_permissions.sql" />
+    <Build Include="Tables\sf_content_items_category.sql" />
+    <Build Include="Tables\sf_object_data_sf_permissions.sql" />
+    <Build Include="Tables\sf_permissions.sql" />
+    <Build Include="Tables\sf_content_items_tags.sql" />
+    <Build Include="Tables\sf_frm_dscrptn_pblshd_trnsltns.sql" />
+    <Build Include="Tables\sf_meta_index_composite_fields.sql" />
+    <Build Include="Tables\sf_schema_vrsns.sql" />
+    <Build Include="Tables\sf_app_setting.sql" />
+    <Build Include="Tables\sf_frm_dscrptn_sf_lnguage_data.sql" />
+    <Build Include="Tables\sf_scheduled_tasks.sql" />
+    <Build Include="Tables\sf_content_relation.sql" />
+    <Build Include="Tables\sf_list_items_category.sql" />
+    <Build Include="Tables\sf_news_items_tags.sql" />
+    <Build Include="Tables\sf_roles.sql" />
+    <Build Include="Tables\sf_stat_sentence.sql" />
+    <Build Include="Tables\sf_list_items_tags.sql" />
+    <Build Include="Tables\sf_news_items_sf_permissions.sql" />
+    <Build Include="Tables\sf_publishing_throttle_settings.sql" />
+    <Build Include="Tables\sf_list_items_sf_language_data.sql" />
+    <Build Include="Tables\sf_news_items_sf_commnt.sql" />
+    <Build Include="Tables\sf_publishing_point_settings.sql" />
+    <Build Include="Tables\sf_lst_tms_pblshd_translations.sql" />
+    <Build Include="Tables\sf_cnt_location_filters.sql" />
+    <Build Include="Tables\dynmc_4fc44b0db400925b281171f3.sql" />
+    <Build Include="Tables\sf_news_items_category.sql" />
+    <Build Include="Tables\sf_publishing_point.sql" />
+    <Build Include="Tables\sf_cnt_locations.sql" />
+    <Build Include="Tables\sf_network_supertaxa.sql" />
+    <Build Include="Tables\dynmc_dd6c7f044718604f48874d50.sql" />
+    <Build Include="Tables\sf_publishing_pipe_settings.sql" />
+    <Build Include="Tables\sf_pg_nd_spprtd_prmission_sets.sql" />
+    <Build Include="Tables\sf_network_subtaxa.sql" />
+    <Build Include="Tables\sf_publishing_mapping_settings.sql" />
+    <Build Include="Tables\sf_site_sync_log_entry.sql" />
+    <Build Include="Tables\sf_rcrrngrevenuenewsletterform.sql" />
+    <Build Include="Tables\sf_mta_types_sf_meta_attribute.sql" />
+    <Build Include="Tables\sf_publishing_mapping.sql" />
+    <Build Include="Tables\sf_bounce_stat.sql" />
+    <Build Include="Tables\sf_site_sync_summary.sql" />
+    <Build Include="Tables\sf_mt_fields_sf_meta_attribute.sql" />
+    <Build Include="Tables\sf_versusnewsletter.sql" />
+    <Build Include="Tables\sf_presentation_data.sql" />
+    <Build Include="Tables\sf_c_prdct_pblshd_translations.sql" />
+    <Build Include="Tables\sf_meta_types_section_names.sql" />
+    <Build Include="Tables\sf_page_templates.sql" />
+    <Build Include="Tables\sf_ec_product.sql" />
+    <Build Include="Tables\dynmc_2229d1792f466c893dff0200.sql" />
+    <Build Include="Tables\dynmc_732333bf844656bd4855275d.sql" />
+    <Build Include="Tables\sf_media_content_tags3.sql" />
+    <Build Include="Tables\sf_pipe_mapping_translation.sql" />
+    <Build Include="Tables\sf_ec_product_department.sql" />
+    <Build Include="Tables\sf_calendars.sql" />
+    <Build Include="Tables\sf_media_content_tags2.sql" />
+    <Build Include="Tables\dynmc_76139d6c07f54c82f142fbb4.sql" />
+    <Build Include="Tables\sf_security_roots.sql" />
+    <Build Include="Tables\sf_ec_product_sf_language_data.sql" />
+    <Build Include="Tables\sf_media_content_tags.sql" />
+    <Build Include="Tables\sf_taxa.sql" />
+    <Build Include="Tables\sf_ec_product_tags.sql" />
+    <Build Include="Tables\dynmc_09451792f466c893dff0100b.sql" />
+    <Build Include="Tables\dynmc_32683d29c0842ff1180dc0b0.sql" />
+    <Build Include="Tables\sf_forum_groups.sql" />
+    <Build Include="Tables\sf_media_content_sf_commnt.sql" />
+    <Build Include="Tables\sf_synonyms.sql" />
+    <Build Include="Tables\sf_ec_product_type.sql" />
+    <Build Include="Tables\sf_forum_groups_sf_permissions.sql" />
+    <Build Include="Tables\sf_media_content_category3.sql" />
+    <Build Include="Tables\dynmc_9d70760f7052469bbc62b508.sql" />
+    <Build Include="Tables\sf_taxonomies.sql" />
+    <Build Include="Tables\sf_ab_campaign.sql" />
+    <Build Include="Tables\sf_forum_posts.sql" />
+    <Build Include="Tables\sf_media_content_category2.sql" />
+    <Build Include="Tables\sf_vesion_items.sql" />
+    <Build Include="Tables\sf_csstdygnericapprovalprocess.sql" />
+    <Build Include="Tables\sf_campaign.sql" />
+    <Build Include="Tables\sf_forum_threads.sql" />
+    <Build Include="Tables\sf_media_content_category.sql" />
+    <Build Include="Tables\sf_version_trunks.sql" />
+    <Build Include="Tables\dynmc_73bb1134d7140988c9232d41.sql" />
+    <Build Include="Tables\sf_campaign_link.sql" />
+    <Build Include="Tables\sf_forums.sql" />
+    <Build Include="Tables\sf_mdia_content_sf_permissions.sql" />
+    <Build Include="Tables\sf_vrssxctvnwsltterrequestform.sql" />
+    <Build Include="Tables\sf_version_serial_info.sql" />
+    <Build Include="Tables\sf_campaign_sf_campaign_link.sql" />
+    <Build Include="Tables\sf_forums_sf_permissions.sql" />
+    <Build Include="Tables\sf_version_chnges.sql" />
+    <Build Include="Tables\sf_ec_prdct_book.sql" />
+    <Build Include="Tables\dynmc_8773ddbbf6c4c03c3b32dd92.sql" />
+    <Build Include="Tables\sf_delivery_entry.sql" />
+    <Build Include="Tables\sf_users.sql" />
+    <Build Include="Tables\sf_ec_prdct_generalproduct.sql" />
+    <Build Include="Tables\sf_dynamic_list.sql" />
+    <Build Include="Tables\dynmc_7599ccdd62445d047b70621b.sql" />
+    <Build Include="Tables\sf_user_profile_link.sql" />
+    <Build Include="Tables\sf_ec_prdct_mp3.sql" />
+    <Build Include="Tables\sf_link_click_stat.sql" />
+    <Build Include="Tables\sf_lists_sf_permissions.sql" />
+    <Build Include="Tables\sf_user_profile.sql" />
+    <Build Include="Tables\sf_ec_prdct_software.sql" />
+    <Build Include="Tables\dynmc_c9d0dc7f9864df0413d52937.sql" />
+    <Build Include="Tables\sf_lst.sql" />
+    <Build Include="Tables\sf_lists_sf_commnt.sql" />
+    <Build Include="Tables\sf_user_link.sql" />
+    <Build Include="Tables\sf_module_vrsn.sql" />
+    <Build Include="Tables\sf_lst_sf_subscriber.sql" />
+    <Build Include="Tables\sf_list_items_sf_permissions.sql" />
+    <Build Include="Tables\dynmc_77b8b4bf6083459d93935415.sql" />
+    <Build Include="Tables\sf_user_action.sql" />
+    <Build Include="Tables\sf_pckgng_pckgs.sql" />
+    <Build Include="Tables\sf_message_body.sql" />
+    <Build Include="Tables\sf_list_items_sf_commnt.sql" />
+    <Build Include="Tables\sf_url_data.sql" />
+    <Build Include="Tables\dynmc_906fc1536f34c50b80cf7149.sql" />
+    <Build Include="Tables\sf_media_file_links.sql" />
+    <Build Include="Tables\dynmc_119f82418c5540f59398b565.sql" />
+    <Build Include="Tables\sf_open_stat.sql" />
+    <Build Include="Tables\sf_libraries_sf_permissions.sql" />
+    <Build Include="Tables\sf_workflow_scope.sql" />
+    <Build Include="Tables\sf_media_file_urls.sql" />
+    <Build Include="Tables\dynmc_dc724470b7643d3b911242cf.sql" />
+    <Build Include="Tables\sf_subscriber.sql" />
+    <Build Include="Tables\sf_libraries_sf_commnt.sql" />
+    <Build Include="Tables\dynmc_008bb9265b46239627507b17.sql" />
+    <Build Include="Tables\sf_workflow_permission.sql" />
+    <Build Include="Tables\sf_files_monitor_data.sql" />
+    <Build Include="Tables\sf_meta_data_mapping.sql" />
+    <Build Include="Tables\sf_subscription_info.sql" />
+    <Build Include="Tables\sf_form_description_tags.sql" />
+    <Build Include="Tables\sf_workflow_definition.sql" />
+    <Build Include="Tables\sf_dynamic_content.sql" />
+    <Build Include="Tables\sf_site_sync_smr_fldtms.sql" />
+    <Build Include="Tables\sf_addresses.sql" />
+    <Build Include="Tables\sf_dmztestfromsubmission.sql" />
+    <Build Include="Tables\sf_unsubscription_info.sql" />
+    <Build Include="Tables\sf_form_description_sf_commnt.sql" />
+    <Build Include="Tables\sf_content_link.sql" />
+    <Build Include="Tables\sf_dynmc_cntnt_pblshd_trnsltns.sql" />
+    <Build Include="Tables\sf_site_sync_smr_ttltms.sql" />
+    <Build Include="Tables\sf_mb_dnc_cnt_provider.sql" />
+    <Build Include="Tables\sf_form_description_category.sql" />
+    <Build Include="Tables\dynmc_399b6f1d14420f8196784d41.sql" />
+    <Build Include="Tables\sf_taxonomy_statistic.sql" />
+    <Build Include="Tables\sf_dynmc_cntnt_sf_lnguage_data.sql" />
+    <Build Include="Tables\dynmc_829d1792f466c893dff0200b.sql" />
+    <Build Include="Tables\sf_mb_dnc_cnt_prvdr_sf_prmssns.sql" />
+    <Build Include="Tables\voa_keygen.sql" />
+    <Build Include="Tables\sf_mb_dynamic_module.sql" />
+    <Build Include="Tables\sf_mb_dynmc_mdl_fld_sf_prmssns.sql" />
+    <Build Include="Tables\dynmc_bd20515098584f93b1b55513.sql" />
+    <Build Include="Tables\dynmc_7014cd5c944d378c01764f02.sql" />
+    <Build Include="Tables\sf_frm_dscrpton_sf_permissions.sql" />
+    <Build Include="Tables\sf_wrkflw_dfntn_spprtd_prmssn_.sql" />
+    <Build Include="Tables\sf_mb_dynamic_module_field.sql" />
+    <Build Include="Tables\sf_mb_dynmc_mdl_typ_sf_prmssns.sql" />
+    <Build Include="Tables\sf_frm_dscrptn_sf_prsnttn_data.sql" />
+    <Build Include="Tables\dynmc_4c53b2552414940b96ff1023.sql" />
+    <Build Include="Tables\sf_mb_dynamic_module_type.sql" />
+    <Build Include="Tables\sf_drft_pages_sf_language_data.sql" />
+    <Build Include="Tables\sf_wrkflw_dfntn_sf_permissions.sql" />
+    <Build Include="Tables\sf_mb_dynmc_mdl_sf_permissions.sql" />
+    <Build Include="Tables\sf_language_data.sql" />
+    <Build Include="Tables\dynmc_291fd44d2454400683d8c253.sql" />
+    <Build Include="Tables\sf_facet_facets.sql" />
+    <Build Include="Tables\sf_wrkflw_dfntn_prmssnst_bjct_.sql" />
+    <Build Include="Tables\sf_blog_posts.sql" />
+    <Build Include="Tables\sf_page_data_sf_language_data.sql" />
+    <Build Include="Tables\dynmc_cb403432d554b568b84591ff.sql" />
+    <Build Include="Tables\sf_events_tags.sql" />
+    <Build Include="Tables\sf_workflow_scope_selected_ids.sql" />
+    <Build Include="Tables\sf_mb_fields_backend_section.sql" />
+    <Build Include="Tables\sf_blogs.sql" />
+    <Build Include="Tables\sf_pg_dt_pblished_translations.sql" />
+    <Build Include="Storage\AAMLiveFullTextCatalog.sql" />
+    <Build Include="Security\AAMLiveUser.sql" />
+    <Build Include="Security\FIS_aespinosa.sql" />
+    <Build Include="Security\FIS_midell.sql" />
+    <Build Include="Security\FIS_IT Operations.sql" />
+    <Build Include="Security\AAMLIVE_IT Operations.sql" />
+    <Build Include="Security\SiteFinityUser_BlackJack.sql" />
+    <Build Include="Security\RoleMemberships.sql" />
+  </ItemGroup>
+</Project>
